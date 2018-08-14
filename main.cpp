@@ -7,7 +7,6 @@
 //
 #include<iostream>
 #include<vector>
-#include "getGTEM.hpp"
 #include <string>
 #include <fstream>
 #include <sstream>

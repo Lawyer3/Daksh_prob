@@ -112,7 +112,7 @@ static void getGreaterThanEqMatch(const std::vector<double>& aSearchFor, const s
 
 static int initExecData(string path, vector<Execution>& execs)
 {
-    fstream fin(path);
+	fstream fin(path.c_str());
     string myLine;
     if (fin.is_open() == false)
     {
@@ -146,7 +146,7 @@ static int initExecData(string path, vector<Execution>& execs)
 
 static int initTradeData(string path, vector<Trade>& trades)
 {
-    fstream fin(path);
+	fstream fin(path.c_str());
     string myLine;
     if (fin.is_open() == false)
     {
